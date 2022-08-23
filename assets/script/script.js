@@ -29,6 +29,7 @@ $('.cities').on('click', function(event) {
                 // console.log(cityfound)
                 citylat = (data[0].lat);
                 citylon = (data[0].lon);
+                $('#hoyforecastcity').append( ' ')
                 $('#hoyforecastcity').append(cityfound + ' ' + currentTime.date)
 
                 // console.log(cityfound + citylat + citylon)
@@ -64,8 +65,9 @@ $('.cities').on('click', function(event) {
                             document.getElementById('uvi').style.Color = 'white';
                         }
                        
-
-
+                        var forecastdiv = document.querySelector('#fivedayforecastdiv');
+                        forecastdiv.innerHTML = '';
+                        
                         
                         for (var i = 1; i < data.daily.length - 2; i++) {
                             var dailyinfo = [
@@ -83,7 +85,8 @@ $('.cities').on('click', function(event) {
                                 day5,
                             ]
                             console.log(dailyinfo)
-                            var forecastdiv = document.querySelector('#fivedayforecastdiv')
+                            // var forecastdiv = document.querySelector('#fivedayforecastdiv');
+                            // forecastdiv.innerHTML = '';
                             var forecastcard = document.createElement('div');
                             forecastcard.setAttribute('class','forecastcards')
 
@@ -137,7 +140,8 @@ $('#searchbutton').on('click', function () {
                 // console.log(cityfound)
                 citylat = (data[0].lat);
                 citylon = (data[0].lon);
-                $('#hoyforecastcity').append(cityfound + ' ' + currentTime.date)
+                $('#hoyforecastcity').append( ' ')
+                $('#hoyforecastcity').append(cityfound + ' ' + currentTime.date);
 
                 // console.log(cityfound + citylat + citylon)
                 // Fetch that pulls up weather information
@@ -172,7 +176,9 @@ $('#searchbutton').on('click', function () {
                             document.getElementById('uvi').style.Color = 'white';
                         }
 
-                        
+                        var forecastdiv = document.querySelector('#fivedayforecastdiv');
+                        forecastdiv.innerHTML = ' ';
+
                         for (var i = 1; i < data.daily.length - 2; i++) {
                             var dailyinfo = [
                                 (data.daily[i].temp.day),
@@ -189,7 +195,7 @@ $('#searchbutton').on('click', function () {
                                 day5,
                             ]
                             console.log(dailyinfo)
-                            var forecastdiv = document.querySelector('#fivedayforecastdiv')
+                            // var forecastdiv = document.querySelector('#fivedayforecastdiv')
                             var forecastcard = document.createElement('div');
                             forecastcard.setAttribute('class','forecastcards')
 
