@@ -8,8 +8,8 @@ A web app, designed to function as a simple weather app with a current weather r
  - Javascript: used for basic functionality of the app.
  - JQuery: used for calling and developing funcitons
  - CSS: used for styling
- - Moment.JS: used for time functionality
+ - Moment.JS: used for time functionality 
 
- Enjoy! 
+ #  Enjoy!
 
- #  - Superdriift
+    - Superdriift
