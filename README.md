@@ -1,4 +1,4 @@
-# challenge-6-Weather
+# Challenge-6-Weather
 Challenge  - Weather Web App 
 
 # Description
