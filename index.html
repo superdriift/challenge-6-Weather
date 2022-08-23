@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather Challenge</title>
+
+    <link rel="weather-api" href="api.openweathermap.org/data/2.5/onecall?lat=38.8&lon=12.09&callback=test">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div id="header-div">
+            <h1 id="header">
+                Weather Dashboard
+            </h1>
+        </div>
+    </header>
+
+    <section>
+        <!-- <div id="asidediv"> -->
+            <aside id="searchsection">
+
+                    <h2>Search for a City:</h2>
+                    <input type="text" name="" id="searchbar">
+                    <p id="searchbutton">Search</p>
+
+                    <p id="bar"></p>
+                        <ul id='citieslist'>
+                            <li class="cities"> Austin </li>
+                            <li class="cities"> Chicago </li>
+                            <li class="cities"> New York </li>
+                            <li class="cities"> Orlando </li>
+                            <li class="cities"> San Francisco </li>
+                            <li class="cities"> Seattle </li>
+                            <li class="cities"> Denver </li>
+                            <li class="cities"> Atlanta </li>
+                        </ul>
+
+  
+            </aside>
+
+        <div class="forecastdivs">
+            <div id="hoyforecastdiv">
+                <h2 id="hoyforecastcity">Today's Forecast: </h2>
+                <ul id="hoyforecastdetails">
+                    <li>Temp: </li>
+                    <li>Wind: </li>
+                    <li>Humidity: </li>
+                    <li>UV Index: </li>
+                </ul>
+            </div>
+            <h3 id="fivedaytitle">5 Day Forecast:</h3>
+            <div id="fivedayforecastdiv">
+                <!-- <div class="forecastcards">
+                    <h4>Date</h4>
+                    <ul id="hoy+1">
+                        <li>test </li>
+                        <li>Temp: </li>
+                        <li>Wind: </li>
+                        <li>Humidity: </li>
+                    </ul>
+                </div>
+                <div class="forecastcards">
+                    <h4>Date</h4>
+                    <ul id="hoy+2">
+                        <li>test </li>
+                        <li>Temp: </li>
+                        <li>Wind: </li>
+                        <li>Humidity: </li>
+                    </ul>
+                </div>
+                <div class="forecastcards">
+                    <h4>Date</h4>
+                    <ul id="hoy+3">
+                        <li>test </li>
+                        <li>Temp: </li>
+                        <li>Wind: </li>
+                        <li>Humidity: </li>
+                    </ul>
+                </div>
+                <div class="forecastcards">
+                    <h4>Date</h4>
+                    <ul id="hoy+4">
+                        <li>test </li>
+                        <li>Temp: </li>
+                        <li>Wind: </li>
+                        <li>Humidity: </li>
+                    </ul>
+                </div>
+                <div class="forecastcards">
+                    <h4>Date</h4>
+                    <ul id="hoy+5">
+                        <li>test </li>
+                        <li>Temp: </li>
+                        <li>Wind: </li>
+                        <li>Humidity: </li>
+                    </ul>
+                </div> -->
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>

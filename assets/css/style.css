@@ -1,0 +1,159 @@
+* {
+    margin: 10px;
+    list-style-type: none;
+}
+
+:root {
+    --gooduvi: #23b123 ;
+    --moderateuvi: #fff204;
+    --okayuvi: #ff8c00;
+    --baduvi: #d01111 ;
+}
+
+h2 { 
+    text-align: left;
+}
+
+img {
+    padding: 0pt;
+    margin: 0pt;
+}
+
+span {
+    padding: 1pt 8pt; 
+    border-radius: 2pt;
+    border: solid 1pt black;
+}
+
+
+
+
+.forecastdivs {
+    display: flex;
+    flex-direction: column;
+    /* border-left: black 2pt dashed; */
+}
+
+.forecastcards {
+    background-color: rgb(58, 70, 119);
+    height: 220px;
+    width: 180px;
+    text-align: left;
+    color: white;
+    border-radius: 5pt;
+}
+
+span {
+    color: white;
+}
+
+
+.forecastcards h4 {
+    font-size: 14pt;
+}
+
+#bar {
+    border-top: solid black 1px;
+    padding: 1pt auto;
+}
+
+#citylist {
+    background-color: green;
+}
+
+#fivedaytitle {
+    font-size: 18pt;
+}
+
+#hoyforecastdiv { 
+    border: solid black 1pt;
+    border-radius: 5pt;
+}
+
+#searchbar { 
+    display: flex;
+    width: 90%;
+    height: 34px;
+    font-size: 12pt;
+    border-radius: 5pt;
+}
+
+#searchbutton:hover { 
+    cursor: pointer;
+    background-color: rgb(9, 103, 132);
+}
+
+#searchsection {
+    /* display: block; */
+    /* border: orange 2pt solid; */
+    display: column;
+    width: 20%;
+    float: left;
+    height: 100%;
+}
+
+#searchdiv1 {
+    display: flex;
+    flex-direction: column;
+    border-bottom: solid black 2px;
+}
+
+#searchsection h2 {
+    font-size: 20pt;
+    text-align: left;
+}
+
+#searchsection li {
+    background-color: rgb(206, 204, 204);
+    border-radius: 5pt;
+    padding: 7pt;
+    text-align: center;
+    width: auto;
+    font-size: 14pt;
+}
+
+#searchsection li:hover {
+    cursor: pointer;
+    background-color: rgb(99, 98, 98);
+    color: white;
+}
+
+#fivedayforecastdiv {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: auto 4px;
+
+
+}
+
+#fivedaytitle {
+    width: fit-content;
+}
+
+#header {
+    color: white;
+    font-size: 32pt;
+}
+
+#header-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-image: linear-gradient(to right, rgb(39, 39, 251) , rgb(0, 0, 89));
+}
+
+#searchdiv2 {
+    background-color: orange;
+}
+
+#searchbutton {
+    color: white;
+    border-radius: 5pt;
+    padding: 7pt;
+    text-align: center;
+    width: auto;
+    font-size: 14pt;
+    background-color: rgb(21, 146, 185);
+}
